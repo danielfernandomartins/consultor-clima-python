@@ -29,9 +29,22 @@ Combinar dados de localização com dados climáticos em um único fluxo de cons
 - Manipulação de JSON
 - Tratamento de erro
 
+## Visão para Operações de TI
+
+O fluxo depende de mais de uma chamada externa, o que ajuda a praticar análise de dependências. Uma falha pode ocorrer na busca da cidade, na obtenção das coordenadas ou na consulta climática.
+
+### Como eu investigaria uma falha
+
+- Confirmaria em qual etapa o erro ocorreu
+- Verificaria status HTTP
+- Validaria parâmetros enviados
+- Conferiria dados retornados pela primeira API
+- Testaria a segunda chamada isoladamente
+- Diferenciaria falha local de indisponibilidade externa
+
 ## Como explicar em entrevista
 
-> "O projeto me ajudou a entender integração entre serviços: primeiro localizo a cidade, depois uso os dados retornados para fazer uma segunda consulta. Foi uma forma prática de trabalhar com APIs dependentes entre si."
+> "Esse projeto me ajudou a pensar em troubleshooting por etapas. Como uma chamada depende da anterior, eu preciso identificar exatamente onde o fluxo parou. Isso é muito parecido com suporte a integrações: isolar componente, validar entrada, checar resposta e localizar a origem da falha."
 
 ## Autor
 
