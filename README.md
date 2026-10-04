@@ -1,59 +1,38 @@
-# Consultor de Clima por Cidade em Python
+# 🌦️ Consultor de Clima via API em Python
 
-Projeto desenvolvido em Python para consultar informações climáticas de uma cidade utilizando uma API pública.
+Aplicação que consulta uma cidade, obtém sua localização e busca condições climáticas atuais por meio de API externa.
 
-O programa recebe o nome de uma cidade, consulta sua localização e depois busca informações sobre o clima atual.
+## Problema
+
+Combinar dados de localização com dados climáticos em um único fluxo de consulta.
 
 ## Funcionalidades
 
-- Buscar uma cidade pelo nome
-- Consultar latitude e longitude
-- Exibir estado e país
-- Consultar temperatura atual
-- Exibir sensação térmica
-- Exibir umidade do ar
-- Exibir velocidade do vento
-- Tratamento básico para cidade não encontrada
+- Busca de cidade
+- Latitude e longitude
+- Estado e país
+- Temperatura
+- Sensação térmica
+- Umidade
+- Velocidade do vento
+- Tratamento de cidade não encontrada
 
-## Tecnologias utilizadas
+## Tecnologia
 
-- Python
-- Biblioteca `requests`
-- API Open-Meteo
-- Google Colab
+**Python • requests • Open-Meteo • JSON**
 
-## Conceitos praticados
+## O que demonstra
 
-Neste projeto foram utilizados conceitos importantes de Python e consumo de APIs:
-
-- Funções
-- Variáveis
-- Estruturas condicionais
-- Dicionários
+- Consumo de API
 - Requisições HTTP
-- Método GET
-- Parâmetros de requisição
-- Código de status HTTP
-- JSON
-- Manipulação de dados retornados por API
-- `requests.get()`
-- `response.status_code`
-- `response.json()`
-- `.get()`
+- Encadeamento de chamadas externas
+- Manipulação de JSON
+- Tratamento de erro
 
-## Como funciona
+## Como explicar em entrevista
 
-O fluxo do programa é:
+> "O projeto me ajudou a entender integração entre serviços: primeiro localizo a cidade, depois uso os dados retornados para fazer uma segunda consulta. Foi uma forma prática de trabalhar com APIs dependentes entre si."
 
-```text
-Usuário
-   ↓
-Digita o nome da cidade
-   ↓
-Python consulta a API
-   ↓
-API retorna dados em JSON
-   ↓
-Python trata os dados
-   ↓
-Informações do clima são exibidas
+## Autor
+
+**Daniel Fernando Martins**
